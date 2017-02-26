@@ -1,0 +1,110 @@
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  .header__wrap {
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 80px;
+    .logo {
+      width: 155px;
+      padding-top: 30px;
+      position: absolute;
+      z-index: 4;
+      opacity: 0;
+    }
+    .lang__menu {
+      display: flex;
+      padding-top: 20px;
+      position: absolute;
+      right: 35px;
+      z-index: 3;
+      opacity: 0;
+      .language-switcher__wrapper {
+        width: 51px;
+        margin-right: 40px;
+        .language-switcher {
+          position: relative;
+          display: inline-block;
+          .languages {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            max-height: 48px;
+            overflow: hidden;
+            transition: .3s;
+          }
+          .language {
+            cursor: pointer;
+            .icon__arrow {
+              background-image: url("../../img/drpdown-arrow.png");
+              position: absolute;
+              top: 24px;
+              right: -27px;
+              width: 12px;
+              height: 9px;
+              display: block;
+              transform: translateY(-50%);
+              transform-origin: 50% 50%;
+              transition: transform .5s;
+            }
+            .language__link {
+              text-decoration: none;
+              text-transform: uppercase;
+              display: block;
+              color: #343230;
+              font-family: "Times New Roman", sans-serif;
+              font-size: 13px;
+              font-weight: 400;
+              line-height: 48px;
+              &:hover {
+                color: #a7627f;
+              }
+            }
+          }
+        }
+        .language-switcher[data-is-open="true"] {
+          .languages {
+            max-height: 48px * 3;
+          }
+
+          .icon__arrow {
+            transform: translateY(-50%) scaleY(-1);
+            transform-origin: 50% 50%;
+          }
+        }
+      }
+    }
+    .menu {
+      width: 84px;
+      margin-left: 40px;
+      display: block;
+      .menu__link {
+        text-decoration: none;
+        color: #343230;
+        font-family: "Times New Roman", sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 48px;
+        &:hover {
+          color: #a7627f;
+        }
+        .menu__button {
+          display: inline-block;
+          padding-left: 15px;
+          vertical-align: sub;
+          .menu__button-line {
+            width: 2px;
+            height: 16px;
+            display: inline-block;
+            background-color: #a7627f;
+            -ms-transform: skew(-20deg);
+            -webkit-transform: skew(-20deg);
+            transform: skew(-20deg);
+          }
+        }
+      }
+    }
+  }
+}

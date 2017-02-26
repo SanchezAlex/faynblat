@@ -1,0 +1,48 @@
+.home {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .slogan {
+    padding: 235px 266px 0;
+    opacity: 0;
+    h1 {
+      color: #a7627f;
+      font-family: "Times New Roman", sans-serif;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 53px;
+    }
+  }
+  .showreel__play {
+    width: 60px;
+    margin: 0 auto;
+    padding-top: 33px;
+    #play__icon {
+      width: 6px;
+      opacity: 0;
+    }
+    .showreel__play-text {
+      padding-top: 36px;
+      display: block;
+      color: #343230;
+      font-family: "Times New Roman", sans-serif;
+      font-size: 16px;
+      font-style: italic;
+      opacity: 0;
+    }
+  }
+  .scroll {
+    position: absolute;
+    margin: 0 auto;
+    width: 26px;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    #scrolldown__icon-2, #scroll__point {
+      opacity: 0;
+    }
+  }
+}
