@@ -31,8 +31,6 @@ header .header__wrap .logo {
 }
 
 header .header__wrap .lang__menu {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     padding-top: 20px;
     position: absolute;
@@ -66,20 +64,15 @@ header .header__wrap .lang__menu .language-switcher__wrapper .language-switcher 
 }
 
 header .header__wrap .lang__menu .language-switcher__wrapper .language-switcher .language .icon__arrow {
-    background-image: url("../img/drpdown-arrow.png");
+    background-image: url("../../img/drpdown-arrow.png");
     position: absolute;
     top: 24px;
     right: -27px;
     width: 12px;
     height: 9px;
     display: block;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
-    transition: -webkit-transform .5s;
     transition: transform .5s;
 }
 
@@ -103,11 +96,7 @@ header .header__wrap .lang__menu .language-switcher__wrapper .language-switcher[
 }
 
 header .header__wrap .lang__menu .language-switcher__wrapper .language-switcher[data-is-open="true"] .icon__arrow {
-    -webkit-transform: translateY(-50%) scaleY(-1);
-    -ms-transform: translateY(-50%) scaleY(-1);
     transform: translateY(-50%) scaleY(-1);
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
 }
 
@@ -176,11 +165,11 @@ header .header__wrap .menu .menu__link .menu__button .menu__button-line {
     background: #fff;
 }
 
-.popup__menu .languages {
+.popup__menu .languages__menu {
     padding-top: 20px;
 }
 
-.popup__menu .languages a {
+.popup__menu .languages__menu a {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
@@ -192,12 +181,15 @@ header .header__wrap .menu .menu__link .menu__button .menu__button-line {
     line-height: 48px;
 }
 
-.popup__menu .languages a:hover {
+.popup__menu .languages__menu a:hover {
     color: #a7627f;
 }
 
 .popup__menu .menu__page {
-    padding-top: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .popup__menu .menu__page a {
@@ -258,14 +250,10 @@ header .header__wrap .menu .menu__link .menu__button .menu__button-line {
 }
 
 .popup__menu .close__btn .line-1 {
-    -webkit-transform: rotate(60deg);
-    -ms-transform: rotate(60deg);
     transform: rotate(60deg);
 }
 
 .popup__menu .close__btn .line-2 {
-    -webkit-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
     transform: rotate(-60deg);
 }
 

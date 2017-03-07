@@ -135,7 +135,10 @@ header {
       .popup__menu .languages__menu a:hover {
         color: #a7627f; }
   .popup__menu .menu__page {
-    padding-top: 150px; }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     .popup__menu .menu__page a {
       text-decoration: none;
       text-transform: uppercase;
